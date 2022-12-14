@@ -6,12 +6,12 @@
 while True:
     try:
         month, day, year = input('Podaj datę w formacie MONTH-DAY-YEAR: ').split('/')
-        print('Ty głupi amerykanie tak się pisze', year + '-' + month + '-' + day)
+        print(year + '-' + month + '-' + day)
 
     except ValueError:
         try:
             month, day, year = input('Podaj datę w formacie MONTH-DAY-YEAR: ').split(' ')
-            print('Ty głupi amerykanie tak się pisze', year + '-' + month + '-' + day)
+            print(year + '-' + month + '-' + day)
         except:
             pass
 
